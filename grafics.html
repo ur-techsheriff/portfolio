@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./graf_style.css">
+</head>
+<body>
+   
+     <!--HEADER START HERE-->
+
+     <nav id="desk_header">
+
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./resources/logo.png" alt="your tech sheriff logo" />
+            </a>
+        </div>
+
+        <div id="header_list">
+            <ul class="desk_links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">My Services</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Certification</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    
+    <nav id="hamburger_header">
+
+        <div class="logo">
+            <a href="./pindex.html">
+                <img src="./resources/logo.png" alt="your tech sheriff logo" />
+            </a>
+        </div>
+
+        <div class="hamburger_menu">
+
+            <div class="hamburger_icon" onclick="toggleMenu()" >
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- <div class="menu_links"> -->
+
+         
+            <div class="hamburger_list">
+                <ul class="menu_links">
+                    <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+                    <li><a href="#services" onclick="toggleMenu()">My Services</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">My Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Certification</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+                </ul>
+            </div>
+
+            <!-- </div> -->
+                
+        </div>
+
+    </nav>
+
+    <!--HEADER ENDS HERE-->
+
+    <section id="experience_cont">
+        
+            <div class="gra_header">
+                <img
+                src="./resources/education.png"
+                alt="Experience Icon"
+                class="icon"
+                />
+                <h1 class="profile_title">Graphics Experience</h1>
+            </div>
+
+            <div class="place">
+                <article id="left">
+                    <img 
+                        src="./resources/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                        <h3 class="utc">Mawada Printing Press</h3>
+                        <p>Graphics Designer</p>
+                        <p>2020</p>
+                    </div>
+                </article>
+
+                <article id="right">
+                    <img 
+                        src="./resources/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <div>
+                        <h3 class="utc">SoundCore Group</h3>
+                        <p>Lead Graphics Designer</p>
+                        <p>2022 - Present</p>
+                    </div>
+                </article>
+            </div>
+        
+    </section>
+
+    <section id="work">
+        <h2 class="work_title">Brochure Design</h2>
+        <div class="project_details expert_details_container">
+
+            <div class="project_container experience_containers">
+  
+              <div class="details-container color-container"
+                   onclick="window.open('./grafics/SC Prosper.pdf')" >
+                <div class="article_container">
+                  <img
+                    src="./grafics/SC Prosper.png"
+                    alt="Project 1"
+                    class="project-img"
+                  />
+                </div>
+   
+                <h2 class="experience_sub_title">Project Prospectus</h2>
+                <div class="btn-container" >
+                    Click to Open Brochure PDF File
+                </div>
+              </div>
+  
+              <div class="details-container color-container"
+                   onclick="window.open('./grafics/real.pdf')" >
+                <div class="article_container">
+                  <img
+                    src="./grafics/real.png"
+                    alt="Project 2"
+                    class="project-img"
+                  />
+                </div>
+
+                <h2 class="experience_sub_title">Real Estate Brochure</h2>
+                <div class="btn-container" >
+                    Click to Open Brochure PDF File
+                </div>
+              </div>
+  
+              <div class="details-container color-container"
+                   onclick="window.open('./grafics/electricity.pdf')" >
+                <div class="article_container">
+                  <img
+                    src="./grafics/electricity.png"
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+  
+                <h2 class="experience_sub_title">Electricity Brochure</h2>
+                <div class="btn-container" >
+                    Click to Open Brochure PDF File
+                </div>
+              </div>
+  
+            </div>
+          </div>
+
+          <p class="extendable" onclick="showMoreProjects(this)">Click here for more  Brochure Designs...</p>
+
+          <div class="project_details pro_details expert_details_container">
+
+            <div class="project_container experience_containers">
+  
+              <div class="details-container color-container"
+                   onclick="window.open('./grafics/cover.pdf')" >
+                <div class="article_container">
+                  <img
+                    src="./grafics/cover.png"
+                    alt="Project 1"
+                    class="project-img"
+                  />
+                </div>
+   
+                <h2 class="experience_sub_title">Company Profile</h2>
+                <div class="btn-container" >
+                    Click to Open Brochure PDF File
+                </div>
+              </div>
+  
+              <div class="details-container color-container"
+                   onclick="window.open('./grafics/wood.pdf')" >
+                <div class="article_container">
+                  <img
+                    src="./grafics/wood.png"
+                    alt="Project 2"
+                    class="project-img"
+                  />
+                </div>
+
+                <h2 class="experience_sub_title">Brief Company Profile</h2>
+                <div class="btn-container" >
+                    Click to Open Brochure PDF File
+                </div>
+              </div>
+  
+              <div class="details-container color-container"
+                   onclick="window.open('./grafics/wood.pdf')" >
+                <div class="article_container">
+                  <img
+                    src="./grafics/wood.png"
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+  
+                <h2 class="experience_sub_title">Business Profile</h2>
+                <div class="btn-container" >
+                    Click to Open Brochure PDF File
+                </div>
+              </div>
+  
+            </div>
+          </div>
+          
+    </section>
+        
+    </section>
+
+    <section id="work">
+        <h2 class="work_title">Banner Design</h2>
+        <div class="project_details expert_details_container">
+
+            <div class="project_container banner experience_containers">
+  
+              <div class="details-container banner_cont color-container">
+                <div class="article_container">
+                  <img
+                    src="./grafics/profile.png"
+                    alt="Project 1"
+                    class="project-img"
+                  />
+                </div>
+              </div>
+  
+              <div class="details-container banner_cont color-container" >
+                <div class="article_container">
+                  <img
+                    src="./grafics/nata.jpg"
+                    alt="Project 2"
+                    class="project-img"
+                  />
+                </div>
+              </div>
+  
+              <div class="details-container banner_cont color-container" >
+                <div class="article_container">
+                  <img
+                    src="./grafics/real_est.jpg"
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+              </div>
+  
+            </div>
+          </div>
+
+        <div class="project_details banner expert_details_container">
+
+            <div class="project_container experience_containers">
+  
+              <div class="details-container banner_cont color-container">
+                <div class="article_container">
+                  <img
+                    src="./grafics/house.jpg"
+                    alt="Project 1"
+                    class="project-img"
+                  />
+                </div>
+              </div>
+  
+              <div class="details-container banner_cont color-container" >
+                <div class="article_container">
+                  <img
+                    src="./grafics/roll.jpg"
+                    alt="Project 2"
+                    class="project-img"
+                  />
+                </div>
+              </div>
+  
+              <div class="details-container banner_cont color-container" >
+                <div class="article_container">
+                  <img
+                    src="./grafics/church.jpg"
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+              </div>
+  
+            </div>
+          </div>
+
+          <p class="extendable" onclick="showMoreProjects(this)">Click here for more  Brochure Designs...</p>
+
+          <div class="project_details pro_details expert_details_container">
+
+            <div class="project_container experience_containers">
+  
+              <div class="details-container color-container"
+                   onclick="window.open('./grafics/SC Prosper.pdf')" >
+                <div class="article_container">
+                  <img
+                    src="./grafics/SC Prosper.png"
+                    alt="Project 1"
+                    class="project-img"
+                  />
+                </div>
+   
+                <h2 class="experience_sub_title">Company Profile</h2>
+                <div class="btn-container" >
+                    Click to Open Brochure PDF File
+                </div>
+              </div>
+  
+              <div class="details-container color-container"
+                   onclick="window.open('./grafics/wood.pdf')" >
+                <div class="article_container">
+                  <img
+                    src="./grafics/wood.png"
+                    alt="Project 2"
+                    class="project-img"
+                  />
+                </div>
+
+                <h2 class="experience_sub_title">Brief Company Profile</h2>
+                <div class="btn-container" >
+                    Click to Open Brochure PDF File
+                </div>
+              </div>
+  
+              <div class="details-container color-container"
+                   onclick="window.open('./grafics/wood.pdf')" >
+                <div class="article_container">
+                  <img
+                    src="./grafics/wood.png"
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+  
+                <h2 class="experience_sub_title">Business Profile</h2>
+                <div class="btn-container" >
+                    Click to Open Brochure PDF File
+                </div>
+              </div>
+  
+            </div>
+          </div>
+          
+    </section>
+
+    
+    <script>
+      function showMoreProjects( element ) {
+          var proDetails = document.querySelector('.pro_details');
+          var less = document.querySelector('.reduced');
+          // proDetails.classList.toggle('extended');
+          proDetails.style.display = 'flex';
+          element.style.display = 'none';
+          less.style.display = 'flex'; 
+      }
+
+  </script>
+</body>
+</html>

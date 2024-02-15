@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>techsheriff</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="resp_mediaqueries.css">
+</head>
+<body>
+
+    <!--HEADER START HERE-->
+
+    <nav id="desk_header">
+
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./resources/logo.png" alt="your tech sheriff logo" />
+            </a>
+        </div>
+
+        <div id="header_list">
+            <ul class="desk_links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">My Services</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Certification</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    
+    <nav id="hamburger_header">
+
+        <div class="logo">
+            <a href="./pindex.html">
+                <img src="./resources/logo.png" alt="your tech sheriff logo" />
+            </a>
+        </div>
+
+        <div class="hamburger_menu">
+
+            <div class="hamburger_icon" onclick="toggleMenu()" >
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- <div class="menu_links"> -->
+
+         
+            <div class="hamburger_list">
+                <ul class="menu_links">
+                    <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+                    <li><a href="#services" onclick="toggleMenu()">My Services</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">My Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Certification</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+                </ul>
+            </div>
+
+            <!-- </div> -->
+                
+        </div>
+
+    </nav>
+
+    <!--HEADER ENDS HERE-->
+
+
+    <!-- PROFILE SECTION -->
+
+    <section id="profile">
+
+        
+        <div class="profile_text">
+            <p class="text_greeting">Meet</p>
+            <div class="profile_title">
+                <span class="profession">Engr.</span>
+                <span class="lastname">Damilola</span>
+                <span class="vertical-transition" id="firstname">Opeyemi</span>
+            </div>    
+
+                <p class="profile_text_professions"></p>
+                <div class="profile_text_bio">
+                    Having learnt the nitty-gritty of relevant topics in
+                    Computer Engineering and committing myself
+                    in being knowledgeable in past and current
+                    solution's in solving clients demands, I tend to
+                    provide up-to-date and optimal possible
+                    solutions for technologist to implement.
+                    I pride myself in having the ability to work
+                    harmoniously with collaborators and as well
+                    individually, also having the ability to learn,
+                    unlearn and relearn.
+                    To be a global reference point in solving day-today problems of human society using my skills
+                    set is an underlying drive for me to increase my
+                    knowledge.
+                </div> 
+
+        </div>
+
+        <div class="profile_pix_container">
+
+            <button class="slider_btn prev_btn" onclick="prevSlide()">❮</button>
+
+            <div class="slider_container">
+                <div class="slider">
+                    <img src="./resources/markup.png" alt="Picture of Engr Damilola">
+                    <img src="./resources/markup.png" alt="Second Picture of Engr Damilola">
+                    <img src="./resources/project-1.png" alt="Second Picture of Engr Damilola">
+                    <img src="./resources/two.png" alt="Second Picture of Engr Damilola"> <!-- START IMAGE HERE -->
+                    <img src="./resources/onet.png" alt="Second Picture of Engr Damilola">
+                    <img src="./resources/photone.png" alt="Picture of Engr Damilola">
+                    <img src="./resources/photwo.png" alt="Picture of Engr Damilola"> <!-- END IMAGE HERE-->
+                    <!-- <img src="./resources/display.png" alt="Picture of Engr Damilola"> -->
+                </div>
+                <div class="progress_bar">
+                </div>
+            </div>
+
+            <button class="slider_btn next_btn" onclick="nextSlide()">❯</button>
+
+        </div>
+
+        <div class="socials_btn_container">
+
+            <div class="btn_container">
+                <button class="btn" 
+                        onclick="window.open('./resources/Dami_CV.pdf')"
+                >
+                    Download Resume
+                </button>
+    
+                <button class="btn"
+                        onclick="location.href='./link to google meet"
+                >
+                    Schedule Meeting
+                </button>
+            </div>
+    
+            <div id="socials_container">
+    
+                <img
+                src="./resources//linkedin.png"
+                alt="My LinkedIn profile"
+                class="icon"
+                onclick="location.href='https://linkedin.com/'"
+              />
+    
+              <img
+                src="./resources//github.png"
+                alt="My Github profile"
+                class="icon"
+                onclick="location.href='https://github.com/'"
+              />
+                <img
+                src="./resources//linkedin.png"
+                alt="My LinkedIn profile"
+                class="icon"
+                onclick="location.href='https://linkedin.com/'"
+              />
+    
+              <img
+                src="./resources//github.png"
+                alt="My Github profile"
+                class="icon"
+                onclick="location.href='https://github.com/'"
+              />
+    
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROFILE SECTION ENDS HERE -->
+
+    <section id="about">
+        <p class="about_greeting text_greeting">Get To Know More About</p>
+        <h2 class="about_title profile_title">Damilola</h2>
+
+        <div class="about_container">
+
+            <div class="about_pix_container">
+                <img
+                src="./resources/blackportf.png"
+                alt="Black and White Picture of Ope"
+                class="about_pic"
+                />
+            </div>
+
+            <div class="about_exp_container">
+                <div class="experience_containers"> 
+                    <div class="content_container">
+                        <img
+                        src="./resources/education.png"
+                        alt="Experience Icon"
+                        class="icon"
+                        />
+                        <h2>Experience</h2>
+                        <p><b>3+ years </b>Backend Engineer <b>(PHP)</b></p>
+                        <p><b>2+ years </b>Frontend Engineer <b>(JavaScript)</b></p>
+                        <p><b>5+ years </b>Graphics Designer <b>(CorelDraw)</b></p>
+                    </div>
+
+                    <div class="content_container">
+                        <img
+                        src="./resources/experience.png"
+                        alt="Education Icon"
+                        class="icon"
+                        />
+                        <h2>Certication</h2>
+                        <p><b>GMNSE </b> of Nigeria Society Of Enginners </p>
+                        <p><b>Member of IEEE </b>International Electrical & Electronics Engineers</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Having learnt the nitty-gritty of relevant topics in
+                        Computer Engineering and committing myself
+                        in being knowledgeable in past and current
+                        solution's in solving clients demands, I tend to
+                        provide up-to-date and optimal possible
+                        solutions for technologist to implement.
+                        I pride myself in having the ability to work
+                        harmoniously with collaborators and as well
+                        individually, also having the ability to learn,
+                        unlearn and relearn.
+                        To be a global reference point in solving day-today problems of human society using my skills
+                        set is an underlying drive for me to increase my
+                        knowledge.
+                    </p>
+                </div>
+            </div>
+            <!-- <img
+            src="./resources/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#experience'"
+            /> -->
+    </div>
+
+</section>
+
+
+    <section id="experience">
+        <p class="text_greeting experience_greeting">Explore My</p>
+        <h1 class="profile_title">Experience And Portfolio Links</h1>
+
+        <div class="expert_detials_container">
+            <div class="experience_containers">
+                <div class="content_container">
+
+                <h2 class="experience_sub_title">Hardware Engineer</h2>
+
+                <div class="article_container">
+                    <article>
+                        <img 
+                            src="./resources/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <div>
+                            <h3>Computer Architecture</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    
+                    <article>
+                        <img 
+                            src="./resources/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <div>
+                            <h3>Embedded System</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    
+                    <article id="IC_fab">
+                        <img 
+                            src="./resources/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <div>
+                            <h3>IC Fabrication</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img 
+                            src="./resources/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <div>
+                            <h3>Control Systems</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+
+                    <article id="iot">
+                        <img 
+                            src="./resources/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <div>
+                            <h3>IoT (Home Automation)</h3>
+                            <p>Advance</p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img 
+                            src="./resources/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <div>
+                            <h3>Drone Technology</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+            <div class="content_container">
+                <h2 class="experience_sub_title">Software Engineer</h2>
+                <div class="article_container">
+                    <a href="#" class="port_links">
+                        <article>
+                            <img
+                                src="./resources/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Advance</p>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="#" class="port_links">
+                        <article>
+                            <img
+                                src="./resources/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </a>
+
+                    <article id="javascript">
+                        <img
+                            src="./resources/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <div id="js">
+                            <h3>Javascript</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+
+                    <article id="ajax">
+                        <img
+                            src="./resources/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <div>
+                            <h3>AJAX</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+
+                    <article id="php">
+                        <img
+                            src="./resources/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <div>
+                            <h3>PHP</h3>
+                            <p>Advance</p>
+                        </div>
+                    </article>
+
+                    <article id="mysql">
+                        <img
+                            src="./resources/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <div>
+                            <h3>MySQL</h3>
+                            <p>Advance</p>
+                        </div>
+                    </article>
+
+                    <article id="python">
+                        <img
+                            src="./resources/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <div>
+                            <h3>Python</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+    <section id="projects">
+        <p class="text_greeting project_greeting">Browse My Most Recent Projects</p>
+        <h1 class="project_title profile_title">Hardware Projects</h1>
+
+        <div class="project_details expert_details_container">
+
+          <div class="project_container experience_containers">
+
+            <div class="details-container color-container">
+              <div class="article_container">
+                <img
+                  src="./resources/drone.jpg"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+ 
+              <h2 class="experience_sub_title">Drone Construction</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+
+            <div class="details-container color-container">
+              <div class="article_container">
+                <img
+                  src="./resources/hau.jpg"
+                  alt="Project 2"
+                  class="project-img"
+                />
+
+              </div>
+              <h2 class="experience_sub_title">Home Automation</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+
+            <div class="details-container color-container">
+              <div class="article_container">
+                <img
+                  src="./resources/ca.jpg"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+
+              <h2 class="experience_sub_title">Embedded System</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- <img
+          src="./resources/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        /> -->
+
+        <h1 class="project_title profile_title">Software Projects</h1>
+
+        <div class="project_details expert_details_container">
+
+          <div class="project_container experience_containers">
+
+            <div class="details-container color-container">
+              <div class="article_container">
+                <img
+                  src="./resources/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience_sub_title">Backend (PHP & MySQL)</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+
+            <div class="details-container color-container">
+              <div class="article_container">
+                <img
+                  src="./resources/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience_sub_title">Frontend (JavaScript)</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+
+            <div class="details-container color-container">
+              <div class="article_container">
+                <img
+                  src="./resources/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience_sub_title">Graphics Design</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='./grafics.html'"
+                >
+                  More Designs
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+    </section>
+
+    <!-- <section id="contact">
+    <p class="text_greeting">Get in Touch</p>
+    <h1 class="profile_title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+        <img
+            src="./resources/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+        <img
+            src="./resources/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+        />
+        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+    </div>
+    </section> -->
+
+    <!-- <footer>
+
+        <nav>
+          <div class="nav-links-container">
+
+            <ul class="nav_links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+          </div>
+        </nav>
+
+        <p>Copyright &#169; 2023 Damilola. All Rights Reserved.</p>
+
+    </footer> -->
+
+    <script type="text/javascript" src="pscript.js" ></script>
+    
+</body>
+</html>

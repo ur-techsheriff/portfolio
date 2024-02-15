@@ -1,0 +1,118 @@
+/* @media screen and ( max-width: 1400px ) {
+    #project {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+
+    #project {
+        height: fit-content;
+    }
+} */
+
+@media screen and ( max-width: 800px ) {
+    #desk_header {
+        display : none;
+    }
+    #hamburger_header {
+        display : flex;
+    }
+    /* #profile{
+        display: block;
+    }
+    section {
+        margin: 0 5%;
+    }
+    section, .section_container {
+        height: fit-content;
+    }
+    .profile_pic_container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    } */
+
+}
+
+@media (max-width: 720px) {
+    .profile_text,
+    .profile_pix_container {
+        flex: 1 1 100%;
+        font-size: 1rem;
+    }
+
+    .profile_text_greeting{
+        font-size: 1rem;
+    }
+
+    .profile_title{
+        margin-top: -27px;
+    }
+
+    .profession , .lastname , #firstname{
+        font-size: 1.2rem;
+        /* margin-top: 30px; */
+    }
+
+    .profile_text{
+        padding-top: 0.2rem;
+        margin-top: 0.2rem;
+        font-size: .7rem;
+        /* justify-content: center;
+        align-items: center; */
+    }
+
+    .profile_text_professions{
+        margin-top: -7px;
+    }
+
+    .profile_text_bio{
+        margin-top: 12px;
+        font-size: .7rem;
+    }
+
+    .profile_pix_container {
+        order: -1; 
+        margin-top: 0; 
+        margin-bottom: 0.1rem;
+    }
+
+    .socials_btn_container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    #socials_container{
+        display: flex;
+        gap: 3rem; /* Adjust the gap as needed */
+        overflow: hidden;
+        margin-top: 1rem;
+    }
+
+    .icon{
+        cursor: pointer;
+        /* width: 20rem; */
+        height: 1.5rem;
+    }
+
+    .btn_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .8rem;
+        margin: -1rem 0 1rem 0;
+    }
+
+    .CV_btn , .Meeting_btn{
+        width: 10rem;
+        height: 2rem;
+    }
+
+    .slider img{
+        height: auto;
+    }
+
+}
